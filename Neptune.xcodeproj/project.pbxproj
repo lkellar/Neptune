@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03BE899268D7E8300726D55 /* NeptuneParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE898268D7E8300726D55 /* NeptuneParserTests.swift */; };
+		A03BE89B268D7EA900726D55 /* NeptuneEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE89A268D7EA900726D55 /* NeptuneEvaluatorTests.swift */; };
+		A03BE89D268D7EB800726D55 /* NeptuneCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE89C268D7EB800726D55 /* NeptuneCalculatorTests.swift */; };
+		A067F74C26B2034B00A72F8B /* CoreGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067F74B26B2034A00A72F8B /* CoreGraph.swift */; };
+		A067F74D26B2034B00A72F8B /* CoreGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067F74B26B2034A00A72F8B /* CoreGraph.swift */; };
+		A0C3A6C126B5CE72009A525A /* NeptuneBoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A6C026B5CE72009A525A /* NeptuneBoundsTests.swift */; };
+		A0DE62782675EBB500E60929 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62772675EBB500E60929 /* Tests_iOS.swift */; };
+		A0DE62832675EBB500E60929 /* NeptuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62612675EBAE00E60929 /* NeptuneApp.swift */; };
+		A0DE62842675EBB500E60929 /* NeptuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62612675EBAE00E60929 /* NeptuneApp.swift */; };
+		A0DE62872675EBB500E60929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DE62632675EBB500E60929 /* Assets.xcassets */; };
+		A0DE62882675EBB500E60929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DE62632675EBB500E60929 /* Assets.xcassets */; };
+		A0DE62AD2675EC6800E60929 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62AC2675EC6700E60929 /* ContentView.swift */; };
+		A0DE62AE2675EC6800E60929 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62AC2675EC6700E60929 /* ContentView.swift */; };
+		A0DE62C72675ECE900E60929 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62AF2675ECE900E60929 /* Util.swift */; };
+		A0DE62C82675ECE900E60929 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62AF2675ECE900E60929 /* Util.swift */; };
+		A0DE62C92675ECE900E60929 /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B02675ECE900E60929 /* Equation.swift */; };
+		A0DE62CA2675ECE900E60929 /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B02675ECE900E60929 /* Equation.swift */; };
+		A0DE62CB2675ECE900E60929 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B12675ECE900E60929 /* Bounds.swift */; };
+		A0DE62CC2675ECE900E60929 /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B12675ECE900E60929 /* Bounds.swift */; };
+		A0DE62CD2675ECE900E60929 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B32675ECE900E60929 /* Calculator.swift */; };
+		A0DE62CE2675ECEA00E60929 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B32675ECE900E60929 /* Calculator.swift */; };
+		A0DE62CF2675ECEA00E60929 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B42675ECE900E60929 /* Evaluator.swift */; };
+		A0DE62D02675ECEA00E60929 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B42675ECE900E60929 /* Evaluator.swift */; };
+		A0DE62D12675ECEA00E60929 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B52675ECE900E60929 /* Shared.swift */; };
+		A0DE62D22675ECEA00E60929 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B52675ECE900E60929 /* Shared.swift */; };
+		A0DE62D32675ECEA00E60929 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B62675ECE900E60929 /* Parser.swift */; };
+		A0DE62D42675ECEA00E60929 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B62675ECE900E60929 /* Parser.swift */; };
+		A0DE62D52675ECEA00E60929 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DE62B82675ECE900E60929 /* Preview Assets.xcassets */; };
+		A0DE62D62675ECEA00E60929 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DE62B82675ECE900E60929 /* Preview Assets.xcassets */; };
+		A0DE62D72675ECEA00E60929 /* EquationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B92675ECE900E60929 /* EquationSolver.swift */; };
+		A0DE62D82675ECEA00E60929 /* EquationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62B92675ECE900E60929 /* EquationSolver.swift */; };
+		A0DE62D92675ECEA00E60929 /* NoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BB2675ECE900E60929 /* NoPreview.swift */; };
+		A0DE62DA2675ECEA00E60929 /* NoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BB2675ECE900E60929 /* NoPreview.swift */; };
+		A0DE62DB2675ECEA00E60929 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BC2675ECE900E60929 /* Graph.swift */; };
+		A0DE62DC2675ECEA00E60929 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BC2675ECE900E60929 /* Graph.swift */; };
+		A0DE62DD2675ECEA00E60929 /* ColorTileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BE2675ECE900E60929 /* ColorTileManager.swift */; };
+		A0DE62DE2675ECEA00E60929 /* ColorTileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BE2675ECE900E60929 /* ColorTileManager.swift */; };
+		A0DE62DF2675ECEA00E60929 /* ComplexLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BF2675ECE900E60929 /* ComplexLine.swift */; };
+		A0DE62E02675ECEA00E60929 /* ComplexLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62BF2675ECE900E60929 /* ComplexLine.swift */; };
+		A0DE62E12675ECEA00E60929 /* MoveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C02675ECE900E60929 /* MoveControls.swift */; };
+		A0DE62E22675ECEA00E60929 /* MoveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C02675ECE900E60929 /* MoveControls.swift */; };
+		A0DE62E32675ECEA00E60929 /* GraphLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C12675ECE900E60929 /* GraphLabel.swift */; };
+		A0DE62E42675ECEA00E60929 /* GraphLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C12675ECE900E60929 /* GraphLabel.swift */; };
+		A0DE62E52675ECEA00E60929 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C22675ECE900E60929 /* Line.swift */; };
+		A0DE62E62675ECEA00E60929 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C22675ECE900E60929 /* Line.swift */; };
+		A0DE62E72675ECEA00E60929 /* ColorTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C32675ECE900E60929 /* ColorTile.swift */; };
+		A0DE62E82675ECEA00E60929 /* ColorTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C32675ECE900E60929 /* ColorTile.swift */; };
+		A0DE62E92675ECEA00E60929 /* ZoomControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C42675ECE900E60929 /* ZoomControls.swift */; };
+		A0DE62EA2675ECEA00E60929 /* ZoomControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C42675ECE900E60929 /* ZoomControls.swift */; };
+		A0DE62EB2675ECEA00E60929 /* GraphChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C52675ECE900E60929 /* GraphChunk.swift */; };
+		A0DE62EC2675ECEA00E60929 /* GraphChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C52675ECE900E60929 /* GraphChunk.swift */; };
+		A0DE62ED2675ECEA00E60929 /* BoundIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C62675ECE900E60929 /* BoundIndicator.swift */; };
+		A0DE62EE2675ECEA00E60929 /* BoundIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62C62675ECE900E60929 /* BoundIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03BE893268D7CCC00726D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DE625C2675EBAD00E60929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DE626D2675EBB500E60929;
+			remoteInfo = "Neptune (macOS)";
+		};
+		A0DE62742675EBB500E60929 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DE625C2675EBAD00E60929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DE62672675EBB500E60929;
+			remoteInfo = "Neptune (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03BE88F268D7CCC00726D55 /* NeptuneMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeptuneMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03BE898268D7E8300726D55 /* NeptuneParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneParserTests.swift; sourceTree = "<group>"; };
+		A03BE89A268D7EA900726D55 /* NeptuneEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneEvaluatorTests.swift; sourceTree = "<group>"; };
+		A03BE89C268D7EB800726D55 /* NeptuneCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneCalculatorTests.swift; sourceTree = "<group>"; };
+		A067F74B26B2034A00A72F8B /* CoreGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraph.swift; sourceTree = "<group>"; };
+		A0C3A6C026B5CE72009A525A /* NeptuneBoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneBoundsTests.swift; sourceTree = "<group>"; };
+		A0D471E6268D773D00EDD562 /* Neptune.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Neptune.entitlements; sourceTree = "<group>"; };
+		A0DE62612675EBAE00E60929 /* NeptuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneApp.swift; sourceTree = "<group>"; };
+		A0DE62632675EBB500E60929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0DE62682675EBB500E60929 /* Neptune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neptune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DE626E2675EBB500E60929 /* Neptune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neptune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DE62732675EBB500E60929 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DE62772675EBB500E60929 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		A0DE62AC2675EC6700E60929 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0DE62AF2675ECE900E60929 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		A0DE62B02675ECE900E60929 /* Equation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		A0DE62B12675ECE900E60929 /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bounds.swift; sourceTree = "<group>"; };
+		A0DE62B32675ECE900E60929 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		A0DE62B42675ECE900E60929 /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
+		A0DE62B52675ECE900E60929 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		A0DE62B62675ECE900E60929 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A0DE62B82675ECE900E60929 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0DE62B92675ECE900E60929 /* EquationSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationSolver.swift; sourceTree = "<group>"; };
+		A0DE62BB2675ECE900E60929 /* NoPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPreview.swift; sourceTree = "<group>"; };
+		A0DE62BC2675ECE900E60929 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		A0DE62BE2675ECE900E60929 /* ColorTileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTileManager.swift; sourceTree = "<group>"; };
+		A0DE62BF2675ECE900E60929 /* ComplexLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexLine.swift; sourceTree = "<group>"; };
+		A0DE62C02675ECE900E60929 /* MoveControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveControls.swift; sourceTree = "<group>"; };
+		A0DE62C12675ECE900E60929 /* GraphLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLabel.swift; sourceTree = "<group>"; };
+		A0DE62C22675ECE900E60929 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		A0DE62C32675ECE900E60929 /* ColorTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTile.swift; sourceTree = "<group>"; };
+		A0DE62C42675ECE900E60929 /* ZoomControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomControls.swift; sourceTree = "<group>"; };
+		A0DE62C52675ECE900E60929 /* GraphChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphChunk.swift; sourceTree = "<group>"; };
+		A0DE62C62675ECE900E60929 /* BoundIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A03BE88C268D7CCC00726D55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE62652675EBB500E60929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE626B2675EBB500E60929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE62702675EBB500E60929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A03BE890268D7CCC00726D55 /* NeptuneMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				A03BE898268D7E8300726D55 /* NeptuneParserTests.swift */,
+				A03BE89A268D7EA900726D55 /* NeptuneEvaluatorTests.swift */,
+				A03BE89C268D7EB800726D55 /* NeptuneCalculatorTests.swift */,
+				A0C3A6C026B5CE72009A525A /* NeptuneBoundsTests.swift */,
+			);
+			path = NeptuneMacTests;
+			sourceTree = "<group>";
+		};
+		A0DE625B2675EBAD00E60929 = {
+			isa = PBXGroup;
+			children = (
+				A0D471E6268D773D00EDD562 /* Neptune.entitlements */,
+				A0DE62602675EBAE00E60929 /* Shared */,
+				A0DE62762675EBB500E60929 /* Tests iOS */,
+				A03BE890268D7CCC00726D55 /* NeptuneMacTests */,
+				A0DE62692675EBB500E60929 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0DE62602675EBAE00E60929 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62AC2675EC6700E60929 /* ContentView.swift */,
+				A0DE62612675EBAE00E60929 /* NeptuneApp.swift */,
+				A0DE62632675EBB500E60929 /* Assets.xcassets */,
+				A0DE62B12675ECE900E60929 /* Bounds.swift */,
+				A0DE62B02675ECE900E60929 /* Equation.swift */,
+				A0DE62B92675ECE900E60929 /* EquationSolver.swift */,
+				A0DE62B22675ECE900E60929 /* Evaluator */,
+				A0DE62B72675ECE900E60929 /* Preview Content */,
+				A0DE62AF2675ECE900E60929 /* Util.swift */,
+				A0DE62BA2675ECE900E60929 /* views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A0DE62692675EBB500E60929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62682675EBB500E60929 /* Neptune.app */,
+				A0DE626E2675EBB500E60929 /* Neptune.app */,
+				A0DE62732675EBB500E60929 /* Tests iOS.xctest */,
+				A03BE88F268D7CCC00726D55 /* NeptuneMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DE62762675EBB500E60929 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62772675EBB500E60929 /* Tests_iOS.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		A0DE62B22675ECE900E60929 /* Evaluator */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62B32675ECE900E60929 /* Calculator.swift */,
+				A0DE62B42675ECE900E60929 /* Evaluator.swift */,
+				A0DE62B52675ECE900E60929 /* Shared.swift */,
+				A0DE62B62675ECE900E60929 /* Parser.swift */,
+			);
+			path = Evaluator;
+			sourceTree = "<group>";
+		};
+		A0DE62B72675ECE900E60929 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62B82675ECE900E60929 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0DE62BA2675ECE900E60929 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62BB2675ECE900E60929 /* NoPreview.swift */,
+				A0DE62BC2675ECE900E60929 /* Graph.swift */,
+				A0DE62BD2675ECE900E60929 /* components */,
+				A067F74B26B2034A00A72F8B /* CoreGraph.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A0DE62BD2675ECE900E60929 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE62BE2675ECE900E60929 /* ColorTileManager.swift */,
+				A0DE62BF2675ECE900E60929 /* ComplexLine.swift */,
+				A0DE62C02675ECE900E60929 /* MoveControls.swift */,
+				A0DE62C12675ECE900E60929 /* GraphLabel.swift */,
+				A0DE62C22675ECE900E60929 /* Line.swift */,
+				A0DE62C32675ECE900E60929 /* ColorTile.swift */,
+				A0DE62C42675ECE900E60929 /* ZoomControls.swift */,
+				A0DE62C52675ECE900E60929 /* GraphChunk.swift */,
+				A0DE62C62675ECE900E60929 /* BoundIndicator.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A03BE88E268D7CCC00726D55 /* NeptuneMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03BE895268D7CCC00726D55 /* Build configuration list for PBXNativeTarget "NeptuneMacTests" */;
+			buildPhases = (
+				A03BE88B268D7CCC00726D55 /* Sources */,
+				A03BE88C268D7CCC00726D55 /* Frameworks */,
+				A03BE88D268D7CCC00726D55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03BE894268D7CCC00726D55 /* PBXTargetDependency */,
+			);
+			name = NeptuneMacTests;
+			productName = NeptuneMacTests;
+			productReference = A03BE88F268D7CCC00726D55 /* NeptuneMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0DE62672675EBB500E60929 /* Neptune (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DE628B2675EBB500E60929 /* Build configuration list for PBXNativeTarget "Neptune (iOS)" */;
+			buildPhases = (
+				A0DE62642675EBB500E60929 /* Sources */,
+				A0DE62652675EBB500E60929 /* Frameworks */,
+				A0DE62662675EBB500E60929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neptune (iOS)";
+			productName = "Neptune (iOS)";
+			productReference = A0DE62682675EBB500E60929 /* Neptune.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0DE626D2675EBB500E60929 /* Neptune (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DE628E2675EBB500E60929 /* Build configuration list for PBXNativeTarget "Neptune (macOS)" */;
+			buildPhases = (
+				A0DE626A2675EBB500E60929 /* Sources */,
+				A0DE626B2675EBB500E60929 /* Frameworks */,
+				A0DE626C2675EBB500E60929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neptune (macOS)";
+			productName = "Neptune (macOS)";
+			productReference = A0DE626E2675EBB500E60929 /* Neptune.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0DE62722675EBB500E60929 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DE62912675EBB500E60929 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				A0DE626F2675EBB500E60929 /* Sources */,
+				A0DE62702675EBB500E60929 /* Frameworks */,
+				A0DE62712675EBB500E60929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0DE62752675EBB500E60929 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = A0DE62732675EBB500E60929 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0DE625C2675EBAD00E60929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A03BE88E268D7CCC00726D55 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A0DE626D2675EBB500E60929;
+					};
+					A0DE62672675EBB500E60929 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A0DE626D2675EBB500E60929 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A0DE62722675EBB500E60929 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A0DE62672675EBB500E60929;
+					};
+				};
+			};
+			buildConfigurationList = A0DE625F2675EBAD00E60929 /* Build configuration list for PBXProject "Neptune" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0DE625B2675EBAD00E60929;
+			productRefGroup = A0DE62692675EBB500E60929 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DE62672675EBB500E60929 /* Neptune (iOS) */,
+				A0DE626D2675EBB500E60929 /* Neptune (macOS) */,
+				A0DE62722675EBB500E60929 /* Tests iOS */,
+				A03BE88E268D7CCC00726D55 /* NeptuneMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A03BE88D268D7CCC00726D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE62662675EBB500E60929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DE62D52675ECEA00E60929 /* Preview Assets.xcassets in Resources */,
+				A0DE62872675EBB500E60929 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE626C2675EBB500E60929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DE62D62675ECEA00E60929 /* Preview Assets.xcassets in Resources */,
+				A0DE62882675EBB500E60929 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE62712675EBB500E60929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A03BE88B268D7CCC00726D55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3A6C126B5CE72009A525A /* NeptuneBoundsTests.swift in Sources */,
+				A03BE89B268D7EA900726D55 /* NeptuneEvaluatorTests.swift in Sources */,
+				A03BE899268D7E8300726D55 /* NeptuneParserTests.swift in Sources */,
+				A03BE89D268D7EB800726D55 /* NeptuneCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE62642675EBB500E60929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DE62CB2675ECE900E60929 /* Bounds.swift in Sources */,
+				A0DE62E32675ECEA00E60929 /* GraphLabel.swift in Sources */,
+				A0DE62DB2675ECEA00E60929 /* Graph.swift in Sources */,
+				A0DE62AD2675EC6800E60929 /* ContentView.swift in Sources */,
+				A0DE62D32675ECEA00E60929 /* Parser.swift in Sources */,
+				A0DE62D72675ECEA00E60929 /* EquationSolver.swift in Sources */,
+				A0DE62CD2675ECE900E60929 /* Calculator.swift in Sources */,
+				A0DE62D92675ECEA00E60929 /* NoPreview.swift in Sources */,
+				A0DE62832675EBB500E60929 /* NeptuneApp.swift in Sources */,
+				A0DE62E72675ECEA00E60929 /* ColorTile.swift in Sources */,
+				A0DE62E12675ECEA00E60929 /* MoveControls.swift in Sources */,
+				A0DE62C92675ECE900E60929 /* Equation.swift in Sources */,
+				A067F74C26B2034B00A72F8B /* CoreGraph.swift in Sources */,
+				A0DE62DD2675ECEA00E60929 /* ColorTileManager.swift in Sources */,
+				A0DE62CF2675ECEA00E60929 /* Evaluator.swift in Sources */,
+				A0DE62ED2675ECEA00E60929 /* BoundIndicator.swift in Sources */,
+				A0DE62E92675ECEA00E60929 /* ZoomControls.swift in Sources */,
+				A0DE62EB2675ECEA00E60929 /* GraphChunk.swift in Sources */,
+				A0DE62DF2675ECEA00E60929 /* ComplexLine.swift in Sources */,
+				A0DE62D12675ECEA00E60929 /* Shared.swift in Sources */,
+				A0DE62E52675ECEA00E60929 /* Line.swift in Sources */,
+				A0DE62C72675ECE900E60929 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE626A2675EBB500E60929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DE62CC2675ECE900E60929 /* Bounds.swift in Sources */,
+				A0DE62E42675ECEA00E60929 /* GraphLabel.swift in Sources */,
+				A0DE62DC2675ECEA00E60929 /* Graph.swift in Sources */,
+				A0DE62AE2675EC6800E60929 /* ContentView.swift in Sources */,
+				A0DE62D42675ECEA00E60929 /* Parser.swift in Sources */,
+				A0DE62D82675ECEA00E60929 /* EquationSolver.swift in Sources */,
+				A0DE62CE2675ECEA00E60929 /* Calculator.swift in Sources */,
+				A0DE62DA2675ECEA00E60929 /* NoPreview.swift in Sources */,
+				A0DE62842675EBB500E60929 /* NeptuneApp.swift in Sources */,
+				A0DE62E82675ECEA00E60929 /* ColorTile.swift in Sources */,
+				A0DE62E22675ECEA00E60929 /* MoveControls.swift in Sources */,
+				A0DE62CA2675ECE900E60929 /* Equation.swift in Sources */,
+				A067F74D26B2034B00A72F8B /* CoreGraph.swift in Sources */,
+				A0DE62DE2675ECEA00E60929 /* ColorTileManager.swift in Sources */,
+				A0DE62D02675ECEA00E60929 /* Evaluator.swift in Sources */,
+				A0DE62EE2675ECEA00E60929 /* BoundIndicator.swift in Sources */,
+				A0DE62EA2675ECEA00E60929 /* ZoomControls.swift in Sources */,
+				A0DE62EC2675ECEA00E60929 /* GraphChunk.swift in Sources */,
+				A0DE62E02675ECEA00E60929 /* ComplexLine.swift in Sources */,
+				A0DE62D22675ECEA00E60929 /* Shared.swift in Sources */,
+				A0DE62E62675ECEA00E60929 /* Line.swift in Sources */,
+				A0DE62C82675ECE900E60929 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DE626F2675EBB500E60929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DE62782675EBB500E60929 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A03BE894268D7CCC00726D55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DE626D2675EBB500E60929 /* Neptune (macOS) */;
+			targetProxy = A03BE893268D7CCC00726D55 /* PBXContainerItemProxy */;
+		};
+		A0DE62752675EBB500E60929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DE62672675EBB500E60929 /* Neptune (iOS) */;
+			targetProxy = A0DE62742675EBB500E60929 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A03BE896268D7CCC00726D55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.NeptuneMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neptune.app/Contents/MacOS/Neptune";
+			};
+			name = Debug;
+		};
+		A03BE897268D7CCC00726D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.NeptuneMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neptune.app/Contents/MacOS/Neptune";
+			};
+			name = Release;
+		};
+		A0DE62892675EBB500E60929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0DE628A2675EBB500E60929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A0DE628C2675EBB500E60929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Neptune.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.Neptune;
+				PRODUCT_NAME = Neptune;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0DE628D2675EBB500E60929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Neptune.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.Neptune;
+				PRODUCT_NAME = Neptune;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0DE628F2675EBB500E60929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.Neptune;
+				PRODUCT_NAME = Neptune;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A0DE62902675EBB500E60929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lkellar.Neptune;
+				PRODUCT_NAME = Neptune;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A0DE62922675EBB500E60929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lkellar.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Neptune (iOS)";
+			};
+			name = Debug;
+		};
+		A0DE62932675EBB500E60929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27888865CT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.lkellar.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Neptune (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A03BE895268D7CCC00726D55 /* Build configuration list for PBXNativeTarget "NeptuneMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A03BE896268D7CCC00726D55 /* Debug */,
+				A03BE897268D7CCC00726D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DE625F2675EBAD00E60929 /* Build configuration list for PBXProject "Neptune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DE62892675EBB500E60929 /* Debug */,
+				A0DE628A2675EBB500E60929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DE628B2675EBB500E60929 /* Build configuration list for PBXNativeTarget "Neptune (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DE628C2675EBB500E60929 /* Debug */,
+				A0DE628D2675EBB500E60929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DE628E2675EBB500E60929 /* Build configuration list for PBXNativeTarget "Neptune (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DE628F2675EBB500E60929 /* Debug */,
+				A0DE62902675EBB500E60929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0DE62912675EBB500E60929 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DE62922675EBB500E60929 /* Debug */,
+				A0DE62932675EBB500E60929 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0DE625C2675EBAD00E60929 /* Project object */;
+}
