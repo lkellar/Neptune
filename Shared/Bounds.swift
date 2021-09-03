@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 
 struct Bounds: Equatable {
-    var topLeft: CGPoint
-    var lowerRight: CGPoint
+    let topLeft: CGPoint
+    let lowerRight: CGPoint
+    var scaleFactor: Double = 1
     
     init(topLeft: CGPoint, lowerRight: CGPoint) {
         self.topLeft = topLeft
@@ -38,7 +39,6 @@ extension Bounds: VectorArithmetic {
     }
     
     var magnitudeSquared: Double {
-        print("me when magnitude squaring")
         return pow((Double(abs(self.topLeft.y - self.lowerRight.y) + abs(self.lowerRight.x - self.topLeft.x))), 2)
     }
     
@@ -47,9 +47,6 @@ extension Bounds: VectorArithmetic {
     }
     
     static func - (lhs: Bounds, rhs: Bounds) -> Bounds {
-        print("me when minussing")
-        print(lhs)
-        print(rhs)
         // essentially make a bounds w/o the second one?
         var topLeftX = lhs.topLeft.x
         var topLeftY = lhs.topLeft.y
@@ -88,9 +85,6 @@ extension Bounds: VectorArithmetic {
             }
         }
         let result = Bounds(topLeft: CGPoint(x: topLeftX, y: topLeftY), lowerRight: CGPoint(x: lowerRightX, y: lowerRightY))
-        print("result")
-        print(result)
-        print()
         return result
     }
     
@@ -100,19 +94,12 @@ extension Bounds: VectorArithmetic {
     
     static func + (lhs: Bounds, rhs: Bounds) -> Bounds {
         // essentially make a bounds containing both areas
-        print("me when plussing")
-        print(lhs)
-        print(rhs)
         let result =  Bounds(topLeft: CGPoint(x: min(lhs.topLeft.x, rhs.topLeft.x), y: max(lhs.topLeft.y, rhs.topLeft.y)), lowerRight: CGPoint(x: max(lhs.lowerRight.x, rhs.lowerRight.x), y: min(lhs.lowerRight.y, rhs.lowerRight.y)))
-        print("result")
-        print(result)
-        print()
         return result
         
     }
     
     func zoom(by rhs: Double) -> Bounds {
-        print("me when scaling: \(rhs)")
         let xChange = (abs(abs(self.topLeft.x - self.lowerRight.x) - (abs(self.topLeft.x - self.lowerRight.x) * rhs))) / 2
         let yChange = (abs(abs(self.topLeft.y - self.lowerRight.y) - (abs(self.topLeft.y - self.lowerRight.y) * rhs))) / 2
         if rhs < 1 {

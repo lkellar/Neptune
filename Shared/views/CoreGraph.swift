@@ -15,17 +15,7 @@ struct CoreGraph: View, Equatable {
     var body: some View {
         //Canvas { context, size in
         ZStack {
-            ZStack {
-                ForEach(generateAxes(lowerBound: bounds.topLeft.x, upperBound: bounds.lowerRight.x), id:\.self) { bar in
-                    Line(points: [CGPoint(x: bar.pos, y: bounds.lowerRight.y), CGPoint(x: bar.pos, y: bounds.topLeft.y)], bounds: bounds, scaleFactor: scaleFactor)
-                        .stroke(Color.primary, lineWidth: bar.pos == 0 ? 3.0 : 1.0)
-                }
-                ForEach(generateAxes(lowerBound: bounds.lowerRight.y, upperBound: bounds.topLeft.y), id:\.self) { bar in
-                    Line(points: [CGPoint(x: bounds.lowerRight.x, y: bar.pos), CGPoint(x: bounds.topLeft.x, y: bar.pos)], bounds: bounds, scaleFactor: scaleFactor)
-                        .stroke(Color.primary, lineWidth: bar.pos == 0 ? 3.0 : 1.0)
-                }
-            }.drawingGroup()
-            
+            Axes(bounds: bounds, scaleFactor: scaleFactor)
             ForEach(equations, id:\.self) { equation in
                 if let localPoints = points[equation] {
                     Line(points: localPoints, bounds: bounds, scaleFactor: scaleFactor)
@@ -43,6 +33,11 @@ struct CoreGraph: View, Equatable {
                 }
             }*/
         }
+    }
+    
+    var animatableData: Double {
+        get { return scaleFactor }
+        set { scaleFactor = newValue }
     }
 }
 

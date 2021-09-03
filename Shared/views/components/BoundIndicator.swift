@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BoundIndicator: View {
     @Binding var bounds: Bounds
-    @Binding var tileSize: CGFloat
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
         ZStack {
@@ -25,6 +24,6 @@ struct BoundIndicator: View {
 
 struct BoundIndicator_Previews: PreviewProvider {
     static var previews: some View {
-        BoundIndicator(bounds: Binding.constant(Bounds(topLeft: CGPoint(x: -10, y: 10), lowerRight: CGPoint(x: 10, y: -10))), tileSize: Binding.constant(100))
+        BoundIndicator(bounds: Binding.constant(Bounds(topLeft: CGPoint(x: -10, y: 10), lowerRight: CGPoint(x: 10, y: -10))))
     }
 }

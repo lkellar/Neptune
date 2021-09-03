@@ -10,8 +10,12 @@
 		A03BE899268D7E8300726D55 /* NeptuneParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE898268D7E8300726D55 /* NeptuneParserTests.swift */; };
 		A03BE89B268D7EA900726D55 /* NeptuneEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE89A268D7EA900726D55 /* NeptuneEvaluatorTests.swift */; };
 		A03BE89D268D7EB800726D55 /* NeptuneCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03BE89C268D7EB800726D55 /* NeptuneCalculatorTests.swift */; };
+		A04F09FA26DD737000D3174D /* Axes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F09F926DD736F00D3174D /* Axes.swift */; };
+		A04F09FB26DD737000D3174D /* Axes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F09F926DD736F00D3174D /* Axes.swift */; };
 		A067F74C26B2034B00A72F8B /* CoreGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067F74B26B2034A00A72F8B /* CoreGraph.swift */; };
 		A067F74D26B2034B00A72F8B /* CoreGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067F74B26B2034A00A72F8B /* CoreGraph.swift */; };
+		A096312826E01B74009980A2 /* AxesLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096312726E01B74009980A2 /* AxesLine.swift */; };
+		A096312926E01B74009980A2 /* AxesLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096312726E01B74009980A2 /* AxesLine.swift */; };
 		A0C3A6C126B5CE72009A525A /* NeptuneBoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A6C026B5CE72009A525A /* NeptuneBoundsTests.swift */; };
 		A0DE62782675EBB500E60929 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62772675EBB500E60929 /* Tests_iOS.swift */; };
 		A0DE62832675EBB500E60929 /* NeptuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE62612675EBAE00E60929 /* NeptuneApp.swift */; };
@@ -84,7 +88,9 @@
 		A03BE898268D7E8300726D55 /* NeptuneParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneParserTests.swift; sourceTree = "<group>"; };
 		A03BE89A268D7EA900726D55 /* NeptuneEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneEvaluatorTests.swift; sourceTree = "<group>"; };
 		A03BE89C268D7EB800726D55 /* NeptuneCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneCalculatorTests.swift; sourceTree = "<group>"; };
+		A04F09F926DD736F00D3174D /* Axes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axes.swift; sourceTree = "<group>"; };
 		A067F74B26B2034A00A72F8B /* CoreGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraph.swift; sourceTree = "<group>"; };
+		A096312726E01B74009980A2 /* AxesLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxesLine.swift; sourceTree = "<group>"; };
 		A0C3A6C026B5CE72009A525A /* NeptuneBoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneBoundsTests.swift; sourceTree = "<group>"; };
 		A0D471E6268D773D00EDD562 /* Neptune.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Neptune.entitlements; sourceTree = "<group>"; };
 		A0DE62612675EBAE00E60929 /* NeptuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeptuneApp.swift; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 				A0DE62C42675ECE900E60929 /* ZoomControls.swift */,
 				A0DE62C52675ECE900E60929 /* GraphChunk.swift */,
 				A0DE62C62675ECE900E60929 /* BoundIndicator.swift */,
+				A04F09F926DD736F00D3174D /* Axes.swift */,
+				A096312726E01B74009980A2 /* AxesLine.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -433,6 +441,8 @@
 				A0DE62D92675ECEA00E60929 /* NoPreview.swift in Sources */,
 				A0DE62832675EBB500E60929 /* NeptuneApp.swift in Sources */,
 				A0DE62E72675ECEA00E60929 /* ColorTile.swift in Sources */,
+				A096312826E01B74009980A2 /* AxesLine.swift in Sources */,
+				A04F09FA26DD737000D3174D /* Axes.swift in Sources */,
 				A0DE62E12675ECEA00E60929 /* MoveControls.swift in Sources */,
 				A0DE62C92675ECE900E60929 /* Equation.swift in Sources */,
 				A067F74C26B2034B00A72F8B /* CoreGraph.swift in Sources */,
@@ -462,6 +472,8 @@
 				A0DE62DA2675ECEA00E60929 /* NoPreview.swift in Sources */,
 				A0DE62842675EBB500E60929 /* NeptuneApp.swift in Sources */,
 				A0DE62E82675ECEA00E60929 /* ColorTile.swift in Sources */,
+				A096312926E01B74009980A2 /* AxesLine.swift in Sources */,
+				A04F09FB26DD737000D3174D /* Axes.swift in Sources */,
 				A0DE62E22675ECEA00E60929 /* MoveControls.swift in Sources */,
 				A0DE62CA2675ECE900E60929 /* Equation.swift in Sources */,
 				A067F74D26B2034B00A72F8B /* CoreGraph.swift in Sources */,

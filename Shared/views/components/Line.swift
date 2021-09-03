@@ -10,7 +10,7 @@ import SwiftUI
 struct Line: Shape {
     let points: [CGPoint]
     var bounds: Bounds
-    var scaleFactor: Double
+    var scaleFactor: Double = 1
         
     func path(in rect: CGRect) -> Path {
         var path = Path()

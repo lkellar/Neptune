@@ -17,20 +17,20 @@ struct ZoomControls: View {
     
     func zoomInAction() {
         useAnimation.toggle()
-        scaleFactor /= 2
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        bounds.scaleFactor /= 2
+        /*DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             bounds.scale(by: 0.5)
             scaleFactor *= 2
-        }
+        }*/
     }
     
     func zoomOutAction() {
-        bounds.scale(by: 2)
-        scaleFactor /= 2
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            useAnimation.toggle()
-            scaleFactor *= 2
-        }
+        useAnimation.toggle()
+        bounds.scaleFactor *= 2
+        /*DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            bounds.scale(by: 2)
+            scaleFactor /= 2
+        }*/
     }
 
     @Environment(\.colorScheme) var colorScheme

@@ -7,6 +7,9 @@
 
 import Foundation
 import SwiftUI
+import os
+
+private let logger = Logger(subsystem: "org.lkellar.neptune", category: "util")
 
 // Convert a xy coordinate from the calculator to the actual graph
 func coordToGeo(size: CGSize, coord: CGPoint, bounds: Bounds) -> CGPoint {
@@ -146,7 +149,6 @@ let originalBounds = Bounds(topLeft: CGPoint(x: -10, y: 10), lowerRight: CGPoint
 
 
 func calcPoints(equations: [Equation], bounds: Bounds) -> [Equation: [CGPoint]] {
-    print("Calculating")
     var localPoints: [Equation: [CGPoint]] = [:]
     for equation in equations {
         localPoints[equation] = calculate(equation: equation.value, start: bounds.topLeft.x, end: bounds.lowerRight.x, step: (bounds.lowerRight.x - bounds.topLeft.x) / 1000)
@@ -154,26 +156,6 @@ func calcPoints(equations: [Equation], bounds: Bounds) -> [Equation: [CGPoint]] 
     return localPoints
 }
 
-struct AxesResponse: Hashable {
-    let pos: CGFloat
-    let ratio: CGFloat
-}
-
-// TODO this should revolve around zero more
-func generateAxes(lowerBound rawLowerBound: CGFloat, upperBound rawUpperBound: CGFloat) -> [AxesResponse] {
-    let lowerBound: CGFloat = rawLowerBound.rounded(.up)
-    let upperBound: CGFloat = rawUpperBound.rounded(.down)
-    let step: CGFloat = ((rawUpperBound - rawLowerBound) / 20).rounded(.up)
-    
-    var axes: [AxesResponse] = []
-    var times: CGFloat = 0
-    var nextNumber = lowerBound
-    
-    while nextNumber < upperBound {
-        nextNumber = lowerBound + (times * step)
-        times += 1
-        axes.append(AxesResponse(pos: nextNumber, ratio: (nextNumber - lowerBound) / (upperBound - lowerBound)))
-    }
-    
-    return axes
+func calcOnePoints(equation: Equation, bounds: Bounds) -> [CGPoint] {
+    return calculate(equation: equation.value, start: bounds.topLeft.x, end: bounds.lowerRight.x, step: (bounds.lowerRight.x - bounds.topLeft.x) / 1000)
 }
