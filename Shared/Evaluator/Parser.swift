@@ -21,7 +21,7 @@ func splitToTokens(_ input: String) -> [String]? {
         // if the value is a negative sign and last token WAS NOT a number or a closing parantheses
         let negative = tokens.last?.double == nil && tokens.last != ")" && value == "-"
         // if the value is a valid number or it's a negative sign and the next value is a number
-        if numbers.contains(value) || (negative && numbers.contains(String(equation[index + 1]))) {
+        if numbers.contains(value) || (equation.count > index + 1 && negative && numbers.contains(String(equation[index + 1]))) {
             // if we're looking at a negative sign, grab the next value (a number) and carry on
             if negative {
                 index += 1
@@ -42,7 +42,7 @@ func splitToTokens(_ input: String) -> [String]? {
             }
 
             tokens.append(value)
-        } else if numbers.contains(String(equation[index ... index + 1])) {
+        } else if equation.count > index + 1 && numbers.contains(String(equation[index ... index + 1])) {
             // if a two letter number is present (such as pi), grab it and increase index
             tokens.append(String(equation[index ... index + 1]))
             index += 1
@@ -53,7 +53,7 @@ func splitToTokens(_ input: String) -> [String]? {
             var found = false
             for function in (functions + prefixFunctions) {
                 // if the function is 3 chars long, see if the next 3 chars are equal to the function
-                if function == String(equation[index ... index + (function.count - 1)]) {
+                if equation.count >= index + function.count && function == String(equation[index ... index + (function.count - 1)]) {
                     tokens.append(String(equation[index ... index + (function.count - 1)]))
                     index += (function.count - 1)
                     found = true
@@ -70,6 +70,10 @@ func splitToTokens(_ input: String) -> [String]? {
 
         index += 1
     }
+    if tokens.count == 0 {
+        return []
+    }
+    
 
     // section to add multiplication symbols between two values with no operator
 
