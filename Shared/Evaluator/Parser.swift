@@ -19,7 +19,7 @@ func splitToTokens(_ input: String) -> [String]? {
     while index < equation.count {
         var value = String(equation[index])
         // if the value is a negative sign and last token WAS NOT a number or a closing parantheses
-        let negative = tokens.last?.double == nil && tokens.last != ")" && value == "-"
+        let negative = !numbers.contains(tokens.last ?? "unknown") && tokens.last != ")" && value == "-"
         // if the value is a valid number or it's a negative sign and the next value is a number
         if numbers.contains(value) || (equation.count > index + 1 && negative && numbers.contains(String(equation[index + 1]))) {
             // if we're looking at a negative sign, grab the next value (a number) and carry on

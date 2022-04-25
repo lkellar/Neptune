@@ -104,6 +104,10 @@ class NeptuneParserTests: XCTestCase {
     func testMultiOtherLog() throws {
         XCTAssertEqual(parse("log5(2) + 3")?.joined(separator: " "), "2 log5 3 +")
     }
+    
+    func testMinusMulti() throws {
+        XCTAssertEqual(parse("10x-2")?.joined(separator: " "), "10 x * 2 -")
+    }
 
     func testExponents() throws {
         XCTAssertEqual(parse("2^5")?.joined(separator: " "), "2 5 ^")
