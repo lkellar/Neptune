@@ -156,6 +156,19 @@ func parse(_ input: String) -> [String]? {
                 output.append(topOp!)
                 topOp = stack.popLast()
             }
+            topOp = stack.last
+            if let topOp = topOp {
+                if functions.contains(topOp) {
+                    output.append(stack.popLast()!)
+                } else {
+                    for prefixFunction in prefixFunctions {
+                        if topOp.starts(with: prefixFunction) {
+                            // if a function, add to stack
+                            output.append(stack.popLast()!)
+                        }
+                    }
+                }
+            }
 
         } else {
             for prefixFunction in prefixFunctions {

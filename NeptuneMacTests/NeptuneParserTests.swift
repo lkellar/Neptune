@@ -96,6 +96,14 @@ class NeptuneParserTests: XCTestCase {
     func testPiSymbol() throws {
         XCTAssertEqual(parse("2*π")?.joined(separator: " "), "2 π *")
     }
+    
+    func testMultiSin() throws {
+        XCTAssertEqual(parse("sin(x) + 2")?.joined(separator: " "), "x sin 2 +")
+    }
+    
+    func testMultiOtherLog() throws {
+        XCTAssertEqual(parse("log5(2) + 3")?.joined(separator: " "), "2 log5 3 +")
+    }
 
     func testExponents() throws {
         XCTAssertEqual(parse("2^5")?.joined(separator: " "), "2 5 ^")
