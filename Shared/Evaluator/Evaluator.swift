@@ -103,7 +103,10 @@ func evaluate(_ equation: [String], variables: [String: Double] = [:]) -> Double
                     switch prefix {
                     case "log":
                         // grab the 5 from log5 for example, do a log with custom base
-                        stack.append(logC(stack.popLast()!, forBase: token.replacingOccurrences(of: prefix, with: "").double!))
+                        guard let value = stack.popLast(), let base = token.replacingOccurrences(of: prefix, with: "").double else {
+                            return nil
+                        }
+                        stack.append(logC(value, forBase: base))
                     case "root":
                         // take root3(125) -> 125^1/3 -> 5
                         guard let root = token.replacingOccurrences(of: prefix, with: "").double else {
